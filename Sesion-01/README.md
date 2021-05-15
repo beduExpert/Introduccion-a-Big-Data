@@ -1,13 +1,11 @@
 
-# Sesión #: Nombre de la sesión
+# Sesión 01: Introducción al Big Data las 5 V's
 
-## :dart: Objetivos
+## :dart: El día de hoy comprenderás el alcance y el concepto de Big Data, y las diferencias que guarda con respecto al análisis de datos estático, además de la distinción que existe a la hora de desarrollar consultas entre Big Data y lo que hemos venido haciendo para bases de datos relacionales clásicas. La sesión del día de hoy se centrará en definir conceptualmente las bases sobre las cuales estaremos trabajando a lo largo del módulo en una primer parte, y en la segunda hablaremos sobre la definición para tu proyecto de Big Data, con el cual trabajarás a lo largo de todo el curso.
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
-
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+- Objetivo 1: Definir el concepto de "Grandes Datos" (Big Data) y explicar  sus principales características y su concepción
+- Objetivo 2: 
+- Objetivo 3: 
 
 ## ⚙ Requisitos
 
