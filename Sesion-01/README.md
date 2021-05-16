@@ -1,7 +1,7 @@
 
-# Sesión 01: Introducción al Big Data las 5 V's
+# Sesión 01: Introducción al Big Data, las 5 V's, y el ambiente Apache
 
-## :dart: El día de hoy comprenderás el alcance y el concepto de Big Data, y las diferencias que guarda con respecto al análisis de datos estático, además de la distinción que existe a la hora de desarrollar consultas entre Big Data y lo que hemos venido haciendo para bases de datos relacionales clásicas. La sesión del día de hoy se centrará en definir conceptualmente las bases sobre las cuales estaremos trabajando a lo largo del módulo en una primer parte, y en la segunda hablaremos sobre la definición para tu proyecto de Big Data, con el cual trabajarás a lo largo de todo el curso.
+## :dart: El día de hoy aprenderás los alcance y concepto del Big Data, y las diferencias que guarda con respecto al análisis de datos estático, además de la distinción que existe a la hora de desarrollar consultas entre Big Data y lo que hemos venido haciendo para bases de datos relacionales clásicas. La sesión del día de hoy se centrará en definir conceptualmente las bases sobre las cuales estaremos trabajando a lo largo del módulo en una primer parte, y en la segunda hablaremos sobre la definición para tu proyecto de Big Data, con el cual trabajarás a lo largo de todo el curso.
 
 - Objetivo 1: Definir y comprender el concepto de "Grandes Datos" (Big Data) y explicar  sus principales características y su concepción
 - Objetivo 2: Definir y comprender la principal característica de las 5 V's dentro del paradigma y entorno que rodea al Big Data
@@ -17,7 +17,7 @@
 + Para la presente sesión, presentaremos algunos conceptos fundamentales para comprender conceptualmente los componentes del Big Data. Así mismo, presentaremos algunos softwares y lenguajes que usaremos a lo largo del módulo y del presente curso, en específico el Environment Apache, sumamente usado en la industria y en las posiciones laborales (Hadoop, Spark, y administración de bases de datos NoSQL con Cassandra)
 + En esta sesión recibirás feedback y ayuda por parte del Experto para definir tu proyecto para el curso completo de Big Data. Lo veremos en la última parte de la sesión
 
-### Parte 1: ¿Que es el Big Data?
+## Parte 1: ¿Que es el Big Data?
 
 De acuerdo con IBM (2021), se puede definir como una serie de conjuntos de datos cuyo tamaño y dimensiones están más allá de la capacidad de las bases de datos relacionales tradicionales para capturar, administrar y procesar los datos con baja latencia. Las características de big data incluyen gran volumen, alta velocidad, gran variedad, alta veracidad y gran valor (las 5 v's de las cuales hablaremos a detalle en unos momentos). 
 
@@ -31,24 +31,24 @@ Pongamos un ejemplo, tal como cuando realizas una compra por Amazon (hipotética
 
 - En un primer momento, empiezas a escoger en la página de amazon un telefono inteligente entre su vasta variedad de opciones (das click en diversos productos para analizar su calidad, costo y características)
 
-![2_Amazon](imgassets/2-amazon.png)
+![2_Amazon](imgassets/2-amazon.PNG)
 
 - Parece que entre todos los telefonos que has visto, uno de ellos te ha llamada la atención y decides leer todas sus specs:
 
-![3_Amazon](imgassets/3-amazon.png)
+![3_Amazon](imgassets/3-amazon.PNG)
 
 - Ahora bien, decides pagarlo e introduces toda la información respecto a la forma de pago, y además, se recolectan datos de tu ubicación y se configura un emparejamiento de la forma compra, envío, dirección de entrega y demás detalles:
 
-![4_Amazon](imgassets/4-amazon.png)
+![4_Amazon](imgassets/4-amazon.PNG)
 
 Es decir, hemos hecho un proceso de compra muy simple y rutinario al cual estamos más que acostumrbados, pero imaginate que ese proceso no solo se desarrolla una vez: en nuestra ciudad hay miles y miles de personas que hacen compras por esta plataforma al día, y si a eso le sumamos no solo los compradores del resto de la república mexicana sino de toda América Latina, actualizandose por minuto, y además, a razón de que a Amazon le interesa rastrear patrones de compra-venta, telefonos más adquiridos, agrupar a sus clientes por segmentos para saber que tipo de promociones ofrecer, y tambíen desea conocer la ubicación donde más se compran ciertos telefonos para optimizar la distancia entre almacenes y canales de distribución... ¡toda la data requerida para hacer ese trabajo no podría almacenarse en un CSV como lo has venido haciendo y actualizarse a cada instante, ya que son millones y millones de transacciones por hora, y el tamaño y dimensiones de los datos son enormes!
 
-![5_meme](imgassets/5-bigdatameme.png)
+![5_meme](imgassets/5-bigdatameme.gif)
 
 ## Reto 1: Describe a detalle una situación que involucre Big Data
 - Por equipos o individualmente, describe una situación derivada de la prestación de un servicio digital como el que acabamos de observar (Amazon) que justo desarrolle una gran cantidad de datos y que de ellos, se puedan generar análisis (e.g. las estadísticas de visualizaciones diarias de los millones y millones de usuarios que tiene YouTube cada día)
 
-![6_challenge](imgassets/6-challenge.gif)
+![challenge](imgassets/challenge-accepted.png)
 
 Como te podrás dar cuenta, generalmente, cuando tenemos una enorme cantidad de datos generados por diversas fuentes computacionales, las cuales nos van retroalimentando continuamente sobre un ámbtito en particular, podemos empezar a pensar que estamos ante un fenómeno de Big Data
 
@@ -74,7 +74,7 @@ Entonces, hay casos donde aunque contemos con mucha información, y también de 
 
 Así es, hay un criterio primordial para averiguar si estamos ante modelación de Big Data, y a este se le llama el criterio de las 5 v. Estudiemos a detalle cada una:
 
-#### Volumen
+## Volumen
 
 Empezaremos con la más obvia. Si contemplamos al big data como una pirámide, el volumen es la base. El volumen de datos que administran las empresas se disparó alrededor de 2012, cuando comenzaron a recopilar más de tres millones de datos tan solo por día las empresas. Desde entonces, este volumen se duplica aproximadamente cada 40 meses.
 
@@ -133,7 +133,7 @@ Otras estadísticas increíbles sobre la generación de data incluyen:
 
 Y por eso mismo, los profesionales formados para modelar, aprovechar y explotar esta enorme cantidad de data como tú lo aprenderás en este curso, ¡serán altamente requeridos y valorados en la industria de Ciencia de Datos!
 
-#### Velocidad
+## Velocidad
 
 Además de administrar los datos, las empresas necesitan que la información fluya rápidamente, lo más cerca posible del tiempo real. Tanto es así que el ejecutivo de MetLife enfatizó que: “La velocidad puede ser más importante que el volumen porque puede brindarnos una ventaja competitiva mayor. A veces es mejor tener datos limitados en tiempo real que muchos datos a baja velocidad "
 
@@ -143,7 +143,7 @@ Los datos deben estar disponibles en el momento adecuado para tomar decisiones c
 
 ![hurry](imgassets/hurry-up.gif)
 
-#### Variedad
+## Variedad
 
 La segunda V del big data es la variedad. Una empresa puede obtener datos de muchas fuentes diferentes: desde dispositivos internos hasta tecnología GPS para teléfonos inteligentes o lo que la gente dice en las redes sociales. La importancia de estas fuentes de información varía según la naturaleza del negocio. Por ejemplo, un producto o servicio de mercado masivo debería ser más consciente de las redes sociales que una empresa industrial.
 
@@ -153,7 +153,7 @@ Estos datos pueden tener muchas capas, con diferentes valores. Por ejemplo, cuan
 
 ![datacollection2](imgassets/datacollection2.jpg)
 
-#### Veracidad
+## Veracidad
 
 La cuarta V es la veracidad, que en este contexto equivale a la calidad. Tenemos todos los datos, pero ¿podría faltar algo? ¿Son los datos "limpios" y precisos? ¿Tienen realmente algo que ofrecer?
 
@@ -161,7 +161,7 @@ Así mismo, esta V tiene que ver con el concepto de data integrity. La integrida
 
 ![integrity](imgassets/data-integrity.png)
 
-#### Valor
+## Valor
 
 Finalmente, la V de valor se encuentra en la parte superior de la pirámide de big data. Esto se refiere a la capacidad de transformar un torrente de datos en negocios.
 
@@ -179,17 +179,17 @@ Después de una importante inversión en tiempo y recursos, si una empresa utili
 
 ![unicorn](imgassets/unicorn.png)
 
-## Reto 02: Genera hipotéticamente un proceso Big Data
+# Reto 02: Genera hipotéticamente un proceso Big Data
 
 Ahora que conoces el proceso del Big Data, y que existen 5 requisitos para que hablemos de que estemos ante un caso de Grandes Datos (que se den cada una de las 5 V's), ahora es tu turno. Por equipo o individualmente, anota detalladamente como es que el ejemplo que brindaste en el Reto 01 cumple con las 5 V's. 
 
 Cuando pases ante el grupo, deberás explicar porque el proceso del que hablas si es un problema de Big Data respecto a los requisitos de veracidad, velocidad, volumen, valor y variedad.
 
-![6_challenge](imgassets/6-challenge.gif)
+![challenge](imgassets/challenge-accepted.png)
 
 ## ¿Bien, y que software y lenguajes se usan en la Industria del Big Data?
 
-![different-environment](imgassets/different-environment.jpg)
+![different-environment](imgassets/different-enviroment.jpg)
 
 Una cosa muy importante que debes comprender es que cuando nos afrontamos a problemas de Big Data, en la gran mayoría de las ocasiones, el almacenamiento y poder de computo ofrecido por una sola computadora es totalmente insuficiente (imagina el caso de la gran Katie Bouman, científica de la NASA quien lideró un equipo capaz de procesar una enorme cantidad de datos para recrear la primer imagen en la historia de un Agujero Negro: se ocuparon cerca de 5 Petabytes en distintos HDD distribuidos)
 
@@ -229,7 +229,7 @@ El modelo de programación MapReduce. Básicamente consta de los siguientes paso
 
 ![mapreduce](imgassets/map-reduce.png)
 
-#### Ejemplo 03: El ambiente Apache
+## Ejemplo 03: El ambiente Apache
 
 Continuemos con el siguiente tema del día de hoy, profundizaremos en Hadoop y comprenderemos que softwares y lenguajes usaremos a lo largo de todo el presente curso: Apache
 
@@ -239,7 +239,7 @@ Los ambiente de trabajo Apache para Big Data administration son los más usado p
 
 Presentemos rapidamente algunos de los softwares de Apache que aprenderemos a dominar:
 
-#### El ecosistema Hadoop
+## El ecosistema Hadoop
 
 ![hadoop](imgassets/the-hadoop.png)
 
@@ -249,7 +249,7 @@ La popularidad de Hadoop ha generado herramientas patentadas y de código abiert
 - Mahout: proporciona herramientas analíticas y de desarrollo de Machine Learning
 - HBase: ofrece lecturas y escrituras en tiempo real
 
-![hadoop2](imgassets/hadoop-2-elepahant.jpg)
+![hadoop2](imgassets/hadoop-2-elephant.jpg)
 
 Al enmascarar los detalles necesarios para desarrollar un programa MapReduce, Pig y Hive permiten a un desarrollador
 para escribir código de alto nivel que luego se traduce en uno o más programas MapReduce.
@@ -262,7 +262,7 @@ A diferencia del procesamiento por lotes de Pig and Hive, HBase ofrece la capaci
 
 Además, HBase no depende de MapReduce para acceder a los datos, debido a que el diseño y el funcionamiento de HBase es significativamente diferentes de las bases de datos relacionales SQL. No te preocupes, en este modúlo te ofreceremos una introducción completa y amigable a cada una de estas herramientas para que en modúlos posteriores, puedes aprenderlas a dominar con soltura y libertad.
 
-#### El ecosistema de trabajo de Apache Spark
+## El ecosistema de trabajo de Apache Spark
 
 ![spark](imgassets/spark-logo.png)
 
@@ -272,8 +272,47 @@ No obstante, Hadoop sigue siendo ampliamente utilizado por la confianza de la in
 
 ![both](imgassets/both-meme.gif)
 
-#### NoSQL: Apache Cassandra
+## NoSQL: Apache Cassandra
 
+![cassandra](imgassets/cassandra.jpg)
 
+Como te podrás haber dado cuenta, al usar una cantidad torrencial de datos, no podemos alojar nuestros datos en un único servidor, y por tanto, el SQL clásico al cual estamos acostumbrados de toda la vida, es insuficiente para cubrir las demandantes tareas que exige el Big Data: NoSQL es el siguiente paso, ya que entre muchos factores, debes recordar que SQL es escalable verticalmente, por lo tanto, resulta mucho más díficil de manejar Big Data; NoSQL es escalable horizontalmente.
 
+![NOSQL](imgassets/nosql.png)
+
+Apache Cassandra es una de los administradores de bases de datos NoSQL más eficientes y más utilizadas. Uno de los beneficios clave de este sistema es que ofrece un servicio de alta disponibilidad y ningún punto único de falla. Esto es clave para las empresas que pueden darse el lujo de que su sistema se caiga o pierdan datos. Sin un solo punto de falla, ofrece acceso y disponibilidad verdaderamente consistentes.
+
+Otro beneficio clave de Cassandra es el enorme volumen de datos que puede manejar. Es capaz de manejar de forma eficaz y eficiente grandes cantidades de datos en varios servidores. Además, puede escribir rápidamente grandes cantidades de datos sin afectar la eficiencia de lectura. Cassandra ofrece a los usuarios velocidades de escritura increíblemente rápidas y la velocidad o precisión no se ven afectadas por grandes volúmenes de datos. Es tan rápido y preciso para grandes volúmenes de datos como para volúmenes más pequeños (¡así es, también resulta útil para problemas de Ciencia de Datos más comunes!).
+
+![NOSQL-types](imgassets/nosql-types.png)
+
+Otra razón por la que tantas empresas utilizan Cassandra es su escalabilidad horizontal. Su estructura permite a los usuarios satisfacer los aumentos repentinos de la demanda, ya que les permite simplemente agregar más hardware para ingresar más clientes/Usuarios y datos adicionales. Esto hace que sea fácil de escalar sin paradas ni ajustes importantes necesarios. Además, su escalabilidad lineal es una de las cosas que ayuda a mantener el tiempo de respuesta rápido del sistema.
+
+Aún así, no te preocupes, en modulos posteriores también estudiarás una introducción a MongoDB (un administrador NoSQL que también es ampliamente usado)
+
+![mongo](imgassets/mongo.jpg)
+
+## Reto 3: Resuelve un problema de Data Analysis al que te afrontaste y que con lo que sabes ahora, hubieras podido aplicar Hadoop MapReduce (en caso que no tengas uno, genera un caso hipotético)
+
+![challenge](imgassets/challenge-accepted.png)
+
+En equipos o individualmente, piensa en un problema al cual te afrontaste y por las dimensiones del dataset o la complejidad del algoritmo o modelación que usaste y el tiempo de computo trancurrido, te hubiera sido ampliamente benefico haber empleado el modelo de programación MapReduce del cual hablamos hace unos minutos. 
+
+Por ejemplo, en uno de los problemas que resolví hace tiempo, entrené una red neuronal convulsiva con un data set de entrenamiento de 5 GB, y el tiempo de entrenamiento fue de nada más ni nada menos de 2 días con tres horas, con un uso de mi Ryzen 7 al 100% (y por si te lo preguntas, si, la factura de la luz llego más cara de lo habitual). De haber usado computo paralelo con Hadoop para resolver mi problema, la hubiera podido entrenar en menos de una hora.
+
+![neuronal](imgassets/neuronal.gif)
+
+## Ejemplo 4: Los proyectos de Big Data para el módulo
+
+Como tú bien sabes, en Bedu incentivamos tu aprendizaje con base en un proyecto que irás desarrollando a lo largo del módulo, ello con miras a que puedas aprender y poniendo en práctica tu conocimiento en el mismo proceso. No obstante, al hablar de Big Data (y que en la enorme mayoría de los casos, los archivos de Big Data pueden resolverse en un solo nodo de procesamiento, tal como nuestro PC), es necesario emular el proceso de modelado, clusters de computo y análisis de datos en Hadoop con nodos simulados.
+
+![BI](imgassets/BI.gif)
+
+Así mismo, para el tema de tu dataset, debemos usar uno relativamente grande (en promedio, más allá de los 3 GB) para poder emular lo mejor posible un proceso de Big Data. En este momento, puedes hablar con el Experto para que te ayude a conceptualizar y empezar a cimentar las bases de tu proyecto.
+
+## Reto 4: Comienza a idear tu proyecto con ayuda del Experto
+
+![learn-doing](imgassets/learn-doing.jpg)
+
+Con lo anteriormente dicho, es hora de que empieces a idear tu proyecto. Puedes reciclar uno de tus trabajados del pasado que haya requerido el procesamiento de un o varios datasets relativamente grandes. Comentale tu idea al Experto o alguno de los TAA para ver si es factible y es compatible con el trabajo que desarrollarás a lo largo del módulo y todo el curso.
 
