@@ -73,7 +73,7 @@ Ahora modificaremos yarn-site.xml. Originalmente está así:
 ![26](assets/Picture26.png)
 
 Justo en la línea 17 debemos remplazar el valor comentado de configuraciones específicas YARN con lo siguiente:
-
+<!---
 <configuration>
   <property>
     <name>yarn.nodemanager.aux-services</name>
@@ -84,7 +84,7 @@ Justo en la línea 17 debemos remplazar el valor comentado de configuraciones es
     <value>org.apache.hadoop.mapred.ShuffleHandler</value>
 </property>
 </configuration>
-
+-->
 
 Debería quedar así:
 
