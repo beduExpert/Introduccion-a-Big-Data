@@ -45,12 +45,12 @@ Ahora bien, con ayuda de tu IDE favorita para programar, edita los archivos ante
 ![22](assets/Picture22.png)
 
 Lo que harás a continuación será agregar después de la línea 19 lo siguiente (recuerda que respetar la identación es elemental):
-
-  <<property>
+```
+  <property>
     <name>fs.defaultFS</name>
     <value>hdfs://localhost:9000</value>
   </property>
-
+```
 Debe quedar así (recuerda guardarlo):
 
 ![23](assets/Picture23.png)
