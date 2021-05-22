@@ -58,12 +58,12 @@ Debe quedar así (recuerda guardarlo):
 Ahora modificaremos “mapred-site.xml”. Originalmente está así:
 
 ![24](assets/Picture24.png)
-
+```
   <property>
     <name>mapreduce.framework.name</name>
     <value>yarn</value>
   </property>
-
+```
 Debería quedar así (no olvides guardarlo):
 
 ![25](assets/Picture25.png)
@@ -73,7 +73,7 @@ Ahora modificaremos yarn-site.xml. Originalmente está así:
 ![26](assets/Picture26.png)
 
 Justo en la línea 17 debemos remplazar el valor comentado de configuraciones específicas YARN con lo siguiente:
-
+```
 <configuration>
   <property>
     <name>yarn.nodemanager.aux-services</name>
@@ -84,7 +84,7 @@ Justo en la línea 17 debemos remplazar el valor comentado de configuraciones es
     <value>org.apache.hadoop.mapred.ShuffleHandler</value>
 </property>
 </configuration>
-
+```
 Debería quedar así:
 
 ![27](assets/Picture27.png)
@@ -94,7 +94,7 @@ Guardalo. Ahora debes abrir ‘hdfs-site-xml’. Verás lo siguiente:
 ![28](assets/Picture28.png)
 
 despues de <configuration> deberás escribir lo siguiente:
-
+```
   <property>
     <name>dfs.replication</name>
     <value>1</value>
@@ -107,7 +107,7 @@ despues de <configuration> deberás escribir lo siguiente:
     <name>dfs.datanode.data.dir</name>
     <value>C:\hadoop\data\datanode</value>
   </property>
-
+```
 Deberá quedar así. Guardalo:
 
 ![29](assets/Picture29.png)
