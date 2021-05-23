@@ -20,8 +20,8 @@
 
 Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
 
-- [Ejemplo 01:  Instalación de Java](./Ejemplo-01/README.md)
-- [Ejemplo 02: Instalación de Hadoop](./Ejemplo-02/README.md)
+- [Ejemplo 01:  Instalación de Java JDK root y Hadoop en Windows](./Ejemplo-01/README.md)
+- [Ejemplo 02: Emula tu primer cluster pseudo-distribuido: entorno con un único nodo maestro y esclavo a la vez](./Ejemplo-02/README.md)
 - [Ejemplo 03: Manipulación de Hadoop y YARN](./Ejemplo-03/README.md)
     - [Reto 03: acertijo en YARN](./Reto-03/README.md)
 - [Ejemplo 04: Scripts básicos en Hadoop](./Ejemplo-04/README.md)
