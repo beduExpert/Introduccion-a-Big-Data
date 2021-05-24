@@ -1,18 +1,17 @@
-# Reto 03 - Genera un script para gemerar un top 10 de conteo de palabras en hadoop
-
+# Reto 03 - Navega entre la carpeta de Hadoop
 ## Objetivo
 
-* Aprendera a generar manipulación básica de Hadoop con un dataset de datos de genoma humano
+* Aprender la ejecución simple de Hadoop y los archivos de inicio
 
 ## Desarrollo
 
 ## Paso 01
 
-Identifica el archivo llamada 'ecoli.fa'. Bajalo a tu PC local y ubicalo en un lugar simple y sencillo
+Navega entre la temrinal y ve hasta la carpeta Hadoop, y depsues a sbin. Ahora genera un dir
 
 ## Paso 02
-Usa Java como en el primer ejemplo para desarrollar lo siguiente:
-- crea una función o ejecuta un comando que te permita conocer que oracioneshay guardadas
+
+Analiza y genera hipotesis para que funcionan esos archivos. Tambien genera una captura de pantalla para poder comentar con el profesor la funcionaldiad de cada uno de esos archivos.
 
 ## Paso 03
-Crea o usa una función que te permita conocer las categorías, y despues la frecuencia de las mismas. Debe mostrarse en pantalla los resultados
+Navega en la temrinal hasta la carpeta que contiene el dataset que usaras para tu proyecto: ¿Puedes abrirlo desde Hadoop? Intentalo y vierte en la clase porque si  o porque no fue posible
