@@ -1,4 +1,4 @@
-# Reto # - Genera un script para gemerar un top 10 de conteo de palabras en hadoop
+# Reto 03 - Genera un script para gemerar un top 10 de conteo de palabras en hadoop
 
 ## Objetivo
 
