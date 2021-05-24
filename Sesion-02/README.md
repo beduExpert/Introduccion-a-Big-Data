@@ -6,8 +6,8 @@
 
 - Instalar y preparar adecuadamente Java
 - Instalar y preparar adecuadamente Apache Hadoop 
-- Aprender los comandos básicos y la forma de interactuar con Hadoop, específicamente accesar a YARN
-- Generar tu primer script en Hadoop
+- Generar un pseudo cluster con un único nodo en tu propia computadora
+- Generar tu primer script en Hadoop en HDFS
 
 ## ⚙ Requisitos
 
