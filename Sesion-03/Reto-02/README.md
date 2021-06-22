@@ -1,4 +1,4 @@
-# Reto # - Nombre del reto
+# Reto #2 - Tu propio MapReduce
 
 ## Objetivo
 
