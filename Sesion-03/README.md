@@ -15,8 +15,6 @@ Los objetivos de la presente sesión son:
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
-
 - [Ejemplo 01:  MapReduce](./Ejemplo-01/README.md)
     - [Reto 01: Aprende a implementar MapReduce 01](./Reto-01/README.md)
 - [Ejemplo 02: Genera un MapReduce que te permita contabilizar palabras](./Ejemplo-02/README.md)
