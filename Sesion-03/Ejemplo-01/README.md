@@ -1,59 +1,101 @@
 # Ejemplo # 1 - MapReduce
 
-## Objetivo: Comprender el funcionamiento
+## Objetivo: Escribir una muestra de WordCount MapReduce, empaquetarla y ejecutarla usando Hadoop independiente
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+Esta Ejercio explica cómo escribir un programa MapReduce simple y cómo ejecutarlo.
 
-## Antes que nada: ¿Qué es MapReduce?
+![1](assets/1.jpg)
 
-MapReduce es un framework de software para procesar grandes conjuntos de datos en un sistema distribuido con varias computadoras. La idea central detrás de MapReduce es mapear tus datos en una colección de pares <key,value>, y entonces reducir las parejas con el mismo key. Este concepto puede sonar simple pero de hecho debemos tener algunas consideraciones:
-- Casi todos los datos pueden ser mapeados como un pair <key, value>
-- Tus keys y values podrían ser de cualquier tipo: strings, enteros, dummy e incluso, <kay, value> tal cual
+Para ejecutar un trabajo de MapReduce, los usuarios deben proporcionar una función de mapa, una función de reducción, datos de entrada y una ubicación de datos de salida. Cuando se ejecuta, Hadoop lleva a cabo los siguientes pasos:
 
-El ejemplo más sencillo para estudiar una breve introducción a MapReduce es contar la frecuencia de palabras en un gran conjunto de datos (lo haremos en ejemplos posteriores). Otros ejemplos de que se podría hacer con MapReduce es:
-- Conteo distribuido
-- Busqueda distribuida
-- Machine Learning
+- Hadoop divide los datos de entrada en varios elementos de datos mediante nuevas líneas y ejecuta la función de mapa una vez para cada elemento de datos, dando el elemento como entrada para la función. Cuando se ejecuta, la función de mapa genera uno o más pares clave-valor.
 
-Cuando escribamos un flujo de trabajo de Reducción de mapa, tendremos que crear 2 scripts: el mapa guión y guión derivado. El resto será manejado por AmazonElastic
-Marco MapReduce (EMR).
+- Hadoop recopila todos los pares clave-valor generados a partir de la función de mapa, los ordena por clave y agrupa los valores con la misma clave.
 
-Cuando iniciamos un mapa / reducción del flujo de trabajo, el marco dividirá la entrada en segmentos, pasando cada segmento a una máquina diferente. Cada máquina luego ejecuta el mapeo y la respectiva proporción de datos atribuida a él.
-La secuencia de comandos (que usted escribe) toma algunos datos de entrada y la asigna a los pares <clave, valor> de acuerdo con sus especificaciones. Por ejemplo, si queremos frecuencia en el texto, tendremos <palabra, recuento> entre nuestros pares <clave, valor>. Con nuestro map script , entonces, debería ser el par <palabra, 1> antes de cada palabra en el flujo de entrada. Nota
-que el mapa no tiene agregación (es decir, un recuento real), esto es lo que
-reducecriptitfor. El propósito del modo de evaluación de mapas de datos en la clave <,valor> pares para reducir a agregar.
+- Para cada clave distinta, Hadoop ejecuta la función de reducción una vez mientras pasa la clave y la lista de valores para esa clave como entrada.
 
-Emitió pares de <clave, valor> y luego "mezclados" (para usar la diagrama de abajo), que básicamente significa que los pares con la misma clave están agrupados y pasado a una sola máquina, que luego ejecutará un script para convertirlos 2. El guión reducido (que tú escribirás) toma una recopilación de pares <clave, valor> y"Reduce" el texto de acuerdo con el guión reducido especificado por el usuario. Inourwordcount
-Por ejemplo, queremos contar el número de peores que ocurren
-frecuencias. Por lo tanto, deseamos que nuestro guión reduzca simplemente sumar los valores de la colección de pares <clave, valor> que tienen la misma clave 3.
-El diagrama que se muestra a continuación ilustra lo que se describe de forma centrada.
+- La función de reducción puede generar uno o más pares clave-valor, y Hadoop los escribe en un archivo como resultado final.
 
-El diagrama que e muestra a coontinuación muestra el esquema MapReduce:
-![01](assets/Capture.png)
+# ¿A todo esto que MapReduce?
 
+Map es una función que "transforma" elementos de algún tipo de lista en otro tipo de elemento y los vuelve a colocar en el mismo tipo de lista.
 
+supongamos que tengo una lista de números: [1,2,3] y quiero duplicar cada número, en este caso, la función para "duplicar cada número" es la función x = x * 2. Y sin mapeos, podría escribir un simple bucle, digamos
 
-## Desarrollo
-
-Para el presente ejercicio debiste haber descargado los archivos indicados en el readme de la presente sesión. Deberás tener un directorio 'dblp' en  tu computadora tal como se indica a continuación:
-
-```
--rw-r--r-- 1 webdam webdam    108366  author-medium.txt  
--rw-r--r-- 1 webdam webdam     10070  author-small.txt  
--rw-r--r-- 1 webdam webdam      7878  dblp.dtd  
--rw-r--r-- 1 webdam webdam 720931885  dblp.xml  
--rw-r--r-- 1 webdam webdam    130953  proceedings-medium.txt  
--rw-r--r-- 1 webdam webdam     17151  proceedings-small.txt
+``` 
+A = [1, 2, 3]
+foreach (item in A) A[item] = A[item] * 2
 ```
 
-Una vez formateado el sistema de archivos, debe iniciar el nodo principal de HDFS (namenode). El nodo de nombre es un proceso responsable de administrar los nodos del servidor de archivos (llamados nodos de datos en HADOOP) en el clúster, y lo hace con los comandos ssh. Debe verificar que SSH esté configurado correctamente y, en particular, que pueda iniciar sesión en la máquina local con SSH sin tener que ingresar una contraseña. Prueba el siguiente comando:
-```
-$ ssh localhost
-```
-Sino funciona, ejecuta lo siguiente:
-```
-$ ssh-keygen -t dsa -P ’’ -f "/.ssh/id_dsa  
-$ cat "/.ssh/id_dsa.pub >> "/.ssh/authorized_keys
+y tendría A = [2, 4, 6] pero en lugar de escribir bucles, si tuviera una función de maps podría escribir.
+
+``` 
+A = [1, 2, 3].Map(x => x * 2)
 ```
 
+la x => x * 2 es una función que se ejecutará contra los elementos en [1,2,3]. Lo que sucede es que el programa toma cada elemento, ejecuta (x => x * 2) contra él haciendo que x sea igual a cada elemento y produce una lista de los resultados.
 
+``` 
+1: 1 => 1 * 2: 2
+2: 2 => 2 * 2: 4
+3: 3 => 3 * 2: 6
+```
+
+Así que después de ejecutar la función de mapa con (x => x * 2) tendrías [2, 4, 6].
+
+## Ahora... Que es Reduce?
+
+Reducir es una función que "recopila" los elementos en listas y realiza algunos cálculos en todos ellos, reduciéndolos así a un solo valor.
+
+Encontrar una suma o encontrar promedios son todos ejemplos de una función de reducción. Por ejemplo, si tiene una lista de números, digamos [7, 8, 9] y los quiere resumidos, escribiría un bucle como este.
+
+``` 
+A = [7, 8, 9]
+sum = 0
+foreach (item in A) sum = sum + A[item]
+```
+
+Pero, si tiene acceso a una función de reducción, puede escribirla así:
+
+```
+A = [7, 8, 9]
+sum = A.reduce( 0, (x, y) => x + y )
+```
+
+Ahora es un poco confuso por qué se pasan 2 argumentos (0 y la función con xey). Para que una función de reducción sea útil, debe poder tomar 2 elementos, calcular algo y "reducir" esos 2 elementos a un solo valor, por lo que el programa podría reducir cada par hasta que tengamos un solo valor.
+
+La ejecución sería la siguiente:
+``` 
+result = 0
+7 : result = result + 7 = 0 + 7 = 7
+8 : result = result + 8 = 7 + 8 = 15
+9 : result = result + 9 = 15 + 9 = 24
+```
+
+Pero no desea comenzar con ceros todo el tiempo, por lo que el primer argumento está ahí para permitirle especificar un valor semilla específicamente el valor en la primera línea result =.
+
+digamos que desea sumar 2 listas, podría verse así:
+
+```
+A = [7, 8, 9]
+B = [1, 2, 3]
+suma = 0
+suma = A.reduce (suma, (x, y) => x + y)
+suma = B.reduce (suma, (x, y) => x + y)
+```
+o una versión que es más probable que encuentres en el mundo real:
+```
+A = [7, 8, 9]
+B = [1, 2, 3]
+
+sum_func = (x, y) => x + y
+sum = A.reduce( B.reduce( 0, sum_func ), sum_func )
+```
+
+Es algo bueno en un software de base de datos porque, con el soporte de Map \ Reduce, puede trabajar con la base de datos sin necesidad de saber cómo se almacenan los datos en una base de datos para usarla, para eso es un motor de base de datos.
+
+Solo necesita poder "decirle" al motor lo que desea proporcionándoles una función Mapa o Reducir y luego el motor de base de datos podría encontrar su camino alrededor de los datos, aplicar su función y obtener los resultados que usted necesita. quiero todo sin que sepas cómo se repite en todos los registros.
+
+Hay índices, claves, uniones y vistas y una gran cantidad de elementos que una sola base de datos podría contener, por lo que al protegerlo contra cómo se almacenan realmente los datos, su código se hace más fácil de escribir y mantener.
+
+Lo mismo ocurre con la programación paralela, si solo especifica lo que quiere hacer con los datos en lugar de implementar el código de bucle, entonces la infraestructura subyacente podría "paralelizar" y ejecutar su función en un bucle paralelo simultáneo por usted.

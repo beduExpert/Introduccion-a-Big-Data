@@ -1,33 +1,28 @@
 
-# Sesión #: Nombre de la sesión
+# Sesión # 4: Operaciones básicas de archivos de línea de comandos de HDFS
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+HDFS es un sistema de archivos distribuido y, al igual que un sistema de archivos Unix, permite a los usuarios manipular el sistema de archivos mediante comandos de shell. Esta receta explica cómo usar la línea de comandos básica de HDFS para ejecutar esos comandos.
 
-## ⚙ Requisitos
+Vale la pena señalar que los comandos HDFS tienen una correspondencia uno a uno con los comandos Unix. Por ejemplo, considere el siguiente comando:
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
+ ```
+>hadoop dfs –cat /data/foo.txt
+ ```
+El comando lee el archivo /data/foo.txt y lo imprime en la pantalla, al igual que el comando cat en el sistema Unix.
+ 
 
-## 🎩 Buenas prácticas
 
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
+
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
-
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
-    - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
+- [Ejemplo 01:  Calibrando HDFS](./Ejemplo-01/README.md)
+    - [Reto 01: Una tarea básica con comandos básicos de HDFS](./Reto-01/README.md)
+- [Ejemplo 02:  Configuración de Hadoop en un entorno de clúster distribuido](./Ejemplo-02/README.md)
+    - [Reto 02: Tu propia sesión distribuida de Computo Paralelo](./Reto-02/README.md)
 
 
 

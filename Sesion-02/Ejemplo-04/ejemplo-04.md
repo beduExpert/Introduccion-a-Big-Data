@@ -24,7 +24,7 @@ $ hadoop jar /usr/lib/hadoop/hadoop-examples.jar wordcount \
              /user/USERNAME/wordcount/output
              
              
-Ahora decarga los resultados a tu repo principal ambiente en Roll
+Ahora decarga los resultados a tu repo principal
 
 ```
 $ hadoop fs -get /user/USERNAME/wordcount/output output

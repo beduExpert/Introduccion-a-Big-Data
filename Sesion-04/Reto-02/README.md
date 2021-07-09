@@ -1,15 +1,12 @@
-# Reto # - Nombre del reto
+# Reto #2 - Tu propia sesión distribuida de Computo Paralelo
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Que el alumn osea capaz de replicar lo realizado en clase
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
-
-Aquí se debe agregar eal desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
+- Primero, logra una lectura general de todos las datos en la base con base en los datos de nuestro cliente
+- Ahora, imprime el valor key, value para la acción.
+- Ahora, trata de desarrollarlo generando algunas de las 3 próximas alternativas (desarrollar una tarea novedosa con los datasets de prueba; acabar rápido y satisfactoriamente el mayor analisis o solo tomando una parte coo representativo)
 

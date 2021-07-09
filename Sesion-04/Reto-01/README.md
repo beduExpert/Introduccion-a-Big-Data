@@ -1,15 +1,9 @@
-# Reto # - Nombre del reto
+# Reto #1, una tarea básica con comandos básicos de HDFS
 
-## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+# Desarrollo:
 
-## Desarrollo
+- 1. Ya que has conocido cuales son las líneas básicas de algunos de los comandos disponibles para maniputalr HDFS respectivamente en el PreWork de la presente sesión. Por lo tanto, es importante que empieces a aplicarlo. Utiliza el dataset que estás tratando de implementar para tu proyecto y aplica lo estudiado en el reciente ejemplo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
 
-Aquí se debe agregar el desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
 
