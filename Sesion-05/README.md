@@ -1,34 +1,28 @@
 
-# Sesión #: Nombre de la sesión
+# Sesión #: Introducción a Apache SPARK
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+En la presente sesión, comprenderás como usar Apache Spark para analizar Big Data:
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+- Aprenderás los conceptos básicos de Spark
+- Instalarás y conocerás el ambiente básico de Spark
+- Generarás tu primer script guiado con R o Python para hacer un análisis básico de datos
 
 ## ⚙ Requisitos
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
++ Deberás contar con una máquina virtual con Linux, o en su defecto, con una distribución Linux instala en tu computadora.
++ Es importante que instales Spark en tu computadora tal como se vió en el Prework. Si tienes alguna duda o no tuviste éxito, por favor consulta a tu Experto asignado.
 
-## 🎩 Buenas prácticas
-
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
-
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
+- [Ejemplo 01:  Introducción a Spark](./Ejemplo-01/README.md)
     - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
-
+- [Ejemplo 02:  Introducción a Spark](./Ejemplo-02/README.md)
+    - [Reto 02: Nombre del reto 01](./Reto-02/README.md)
+- [Ejemplo 03:  Introducción a Spark](./Ejemplo-03/README.md)
+    - [Reto 03: Nombre del reto 01](./Reto-03/README.md)
 
 
 
