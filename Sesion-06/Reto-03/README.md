@@ -1,15 +1,18 @@
-# Reto # - Nombre del reto
+# Reto 3 - Primeros pasos con la API de Python en Spark
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Desarrollar una función básica de Python que permita la lectura de advertencias y errores de Spark
 
-## Desarrollo
+Del ejemplo 03, corriste un comando muy básico que te permiriía obtener el número de log levels de ERROR e INFO. Para comenza a prácticar nuestro dominio de Python en Spark, haremos un ejercicio elemental donde vas a calcular el número de ocasiones en los que hubo mensajes de:
+- ERROR
+- INFO
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+Esta función definida por ti en Python deberá permitirte  hacer un conteo de las veces que aparecieron en pantalla estos mensajes. Como consejo, trata de usar las las siguiente funciones de Python
+- lambda
+- collect
 
-Aquí se debe agregar eal desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
+¡Éxito!
+
+![python](assets/python.jpeg)
 

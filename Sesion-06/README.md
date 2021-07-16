@@ -1,34 +1,27 @@
 
-# Sesión #: Nombre de la sesión
+# Sesión 6 - Uso de los componentes de Spark
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+En la presente sesión vas a aprender a interactuar con Spark de tal manera que puedas comprendas el uso básico de este Framework
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+- Uso básico
+- Modos de Ejecución
+- Introducción a Análisis de datos con Python en Spark
 
-## ⚙ Requisitos
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
 
 ## 🎩 Buenas prácticas
 
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
+Si ya tienes instalado de sesiones anteriores los prerrequisitos para usar Spark (Scala, Python, Java), enhorabuena. Si tienes alguna duda respecto a ello o aún no lo has hecho, por favor recurre a los ejemplos de la sesión 05 dle presente módulo, y de forma complementaria, pide ayuda a tu Experto y TA asignados
 
 ## 📂 Organización de la clase
 
 Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
 
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
-    - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
-
-
-
+- [Ejemplo 01:  Modos de ejecución](./Ejemplo-01/README.md)
+    - [Reto 01: Genera un modo de ejecución en cluster un cluster personalizado](./Reto-01/README.md)
+- [Ejemplo 02: Spark RDD](./Ejemplo-02/README.md)
+- [Ejemplo 03: Programando RDD](./Ejemplo-03/README.md)
+    - [Reto 03: Primeros pasos con la API de Python en Spark](./Reto-03/README.md)
 
