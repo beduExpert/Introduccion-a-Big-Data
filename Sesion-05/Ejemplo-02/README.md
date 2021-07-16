@@ -1,4 +1,4 @@
-# Ejemplo 2 - Nombre del ejemplo
+# Ejemplo 2 - Ambiente Spark
 
 ## Componentes de Spark
 
