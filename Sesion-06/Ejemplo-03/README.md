@@ -6,7 +6,15 @@ Un RDD puede ser creado en cuatro maneras. Vas a aprenderlas a detalle a continu
 Esta es una de las formas más sencillas de crear un RDD. Puedes usar la colección existente de sus programas, como List, Array o Set, así como otros, y pedirle a Spark que distribuya esa colección en el clúster para procesarla en paralelo. Una colección se puede distribuir con la ayuda de paralelize (), como se muestra aquí, con un ejemplo muy básico y elemetal con un array básico compuesto por 10 elementos que van del número 1 natural hasta el 10 natural:
 
 ## NOTA IMPORTANTE:
-Previamente a correr este Script, debes cargar previamente la instalación de Python y Spark que aprendimos a hacer en la sesión pasada
+Previamente a correr este Script, debes cargar previamente la instalación de Python y Spark que aprendimos a hacer en la sesión pasada, recuerda instalar ya sea con !pip o el método de tu elección, las siguientes librerias para poder integrar Python con Spark: _org.apache.spark.SparkContext_
+y _org.apache.spark.SparkConf_. Una vez instaladas, importalas de la siguiente manera:
+
+```
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+```
+
+Una vez hecho el anterior paso, podemos continuar:
 
 ```
 # Código escrito en Python
@@ -110,3 +118,4 @@ Lo que te debería aparecer en pantalla debe ser algo así:
 2018-03-19 17:10:41 - myApp - ERROR - error message 2
 2018-03-19 17:10:41 - myApp - ERROR - error message 3
 ```
+

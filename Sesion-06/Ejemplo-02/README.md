@@ -43,4 +43,4 @@ Los metadatos incluyen lo siguiente:
 - La ubicación preferida para las particiones.
 - La información de partición, en caso de par RDD.
 
-Entonces, ¡basta de teoría! Creemos un programa simple y comprendamos los conceptos con más detalle en la siguiente sección.
+Entonces, ¡basta de teoría! Creemos un programa simple y comprendamos los conceptos con más detalle en el siguiente ejemplo.
