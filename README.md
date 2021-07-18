@@ -1,4 +1,4 @@
-# Nombre de módulo
+# Introducción a Big Data
 
 ## :wave: Bienvenid@s
 
@@ -24,8 +24,6 @@ Se requiere que el alumno cuente con una computadora con lo siquientes requisito
 El proyecto a desarrollar será uno basada con emulación de Big Data (es necesario que contemples un dataset básico) para que en el implementes las operaciones básicas que aprenderás en el modulo presente y en posteriores
 
 ## :bookmark_tabs: Sesiones
-
-##### Describir el temario del módulo **Obligatorio** . (Borrar está linea una vez se hay leido) 
 
 - [`Sesión 01:` Introducción al Big Data, las 5 V's, y el ambiente Apache](./Sesion-01)
 - [`Sesión 02:` Introducción a Apache Hadoop](./Sesion-02)
