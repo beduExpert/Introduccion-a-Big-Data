@@ -1,22 +1,18 @@
 
-# Sesión #: Nombre de la sesión
+# Sesión 8 - Introducción a Apache Cassandra
 
 ## :dart: Objetivos
 
 Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+- Comprender los conceptos básicos sobre NoSQL y su aplicación al mundo de la Big Data
+- Aprender a hacer queries básicos en Cassandra
 
 ## ⚙ Requisitos
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
++ Es necesario que cuentes con una distribución Linux (recomendamos Ubuntu) o en su defecto una máquina virtual de Linux en Windows con al menos 2 GB de RAM asignados
++ Es necesario que cuentes con Apache Cassandra descargado e instalado tal como lo estudiamos en el prework de la presente sesión
 
-## 🎩 Buenas prácticas
-
-Agregar buenas prácticas en caso de que la sesión lo requierea, de no ser así borrar está intrucción una vez se haya leido.
 
 ## 📂 Organización de la clase
 
@@ -24,11 +20,10 @@ Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea un
 
 - [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
     - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
+- [Ejemplo 02:  Nombre del ejemplo](./Ejemplo-02/README.md)
     - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 02: Nombre del ejemplo 02](./Ejemplo-02/README.md)
+- [Ejemplo 03: Nombre del ejemplo 02](./Ejemplo-03/README.md)
     - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
-- [Postwork: Nombre del postwork](./Postwork/README.md)
-
 
 
 
