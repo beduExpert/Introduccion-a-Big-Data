@@ -34,12 +34,12 @@ Mueve el archivo ``` ~ / .ssh / id_dsa.pub ``` a todos los nodos del clúster. L
 >touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
 ```
 
-Now with permissions set, add your key to the ``` ~/.ssh/authorized_keys file```.
+Ahora con los permisos establecidos, agregue su clave al ``` ~/.ssh/authorized_keys file```.
 
 ```
 >cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
 ```
-Then you can log in with the following command:
+Luego puede iniciar sesión con el siguiente comando:
 
 ```
 >ssh localhost

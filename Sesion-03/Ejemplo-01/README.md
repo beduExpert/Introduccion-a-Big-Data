@@ -4,7 +4,7 @@
 
 Esta Ejercio explica cómo escribir un programa MapReduce simple y cómo ejecutarlo.
 
-![1](assets/1.jpg)
+![1](assets/Capture.PNG)
 
 Para ejecutar un trabajo de MapReduce, los usuarios deben proporcionar una función de mapa, una función de reducción, datos de entrada y una ubicación de datos de salida. Cuando se ejecuta, Hadoop lleva a cabo los siguientes pasos:
 

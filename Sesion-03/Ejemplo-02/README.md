@@ -82,7 +82,7 @@ Si aún no lo has hecho, debe instalar Apache Ant siguiendo las instrucciones qu
 
 - Cambie el directorio a HADOOP_HOME y copie el archivo hadoop-cookbook-chapter1.jar en el directorio HADOOP_HOME. Para usarlo como entrada, cree un directorio llamado input en HADOOP_HOME y copie el archivo README.txt al directorio. Alternativamente, puede copiar cualquier archivo de texto al directorio de entrada.
 
-- Run the sample using the following command. Here, chapter1.WordCount is the name of the main class we need to run. When you have run the command, you will see the following terminal output:
+- Ejecute la muestra con el siguiente comando. Aquí, cuenta con capítulo1.WordCount, el cual es el nombre de la clase principal que necesitamos ejecutar. Cuando haya ejecutado el comando, verá la siguiente salida de terminal:
 
 ```
 >bin/hadoop jar hadoop-cookbook-chapter1.jar chapter1.WordCount input output
