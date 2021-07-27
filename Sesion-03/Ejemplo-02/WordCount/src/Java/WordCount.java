@@ -1,5 +1,5 @@
 /**
- * Following sample is adopted from original wordcount sample from 
+ * El siguiente ejemplo fue extraído de: 
  * http://wiki.apache.org/hadoop/WordCount. 
  */
 package chapter1;
@@ -21,17 +21,17 @@ import org.apache.hadoop.util.GenericOptionsParser;
 
 
 /**
- * <p>The word count sample counts the number of word occurrences within a set of input documents 
- * using MapReduce. The code has three parts: mapper, reducer, and the main program.</p>
+ * <p> Este ejemplo de recuento de palabras cuenta el número de ocurrencias de palabras dentro de un conjunto de documentos de entrada
+ * utilizando MapReduce. El código tiene tres partes: mapeador, reductor y programa principal.</p>
  * @author Srinath Perera (srinath@wso2.com)
  */
 public class WordCount {
 
   /**
    * <p>
-   * The mapper extends from the org.apache.hadoop.mapreduce.Mapper interface. When Hadoop runs, 
-   * it receives each new line in the input files as an input to the mapper. The �map� function 
-   * tokenize the line, and for each token (word) emits (word,1) as the output.  </p>
+   * El mapeador se extiende desde la interfaz org.apache.hadoop.mapreduce.Mapper. Cuando se ejecuta Hadoop,
+   * recibe cada nueva línea en los archivos de entrada como una entrada para el asignador. La función mapa 
+   * tokeniza la línea, y para cada token (palabra) emite (palabra, 1) como salida. </p>
    */
   public static class TokenizerMapper 
        extends Mapper<Object, Text, Text, IntWritable>{
@@ -50,8 +50,8 @@ public class WordCount {
   }
   
   /**
-   * <p>Reduce function receives all the values that has the same key as the input, and it output the key 
-   * and the number of occurrences of the key as the output.</p>  
+   * <p> La función Reduce recibe todos los valores que tienen la misma clave que la entrada y genera la clave 
+   * y el número de apariciones de la clave como salida. </p>  
    */
   public static class IntSumReducer 
        extends Reducer<Text,IntWritable,Text,IntWritable> {
@@ -70,14 +70,14 @@ public class WordCount {
   }
 
   /**
-   * <p> As input this program takes any text file. Create a folder called input in HDFS (or in local directory if you are running this locally)
+   * <p> Como entrada, este programa toma cualquier archivo de texto. Cree una carpeta llamada entrada en HDFS (o en el directorio local si lo está ejecutando localmente)
    * <ol>
-   * <li>Option1: You can compile the sample by ant from sample directory.  To do this, you need to have Apache Ant installed in your system. 
-   * Otherwise, you can use the complied jar included with the source code. hange directory to HADOOP_HOME, and copy the hadoop-cookbook.jar to the HADOOP_HOME. 
-   * Then run the command > bin/hadoop jar hadoop-cookbook.jar chapter1.WordCount input output.</li> 
-   * <li>As an optional step, copy the �input� directory to the top level of the IDE based project (eclipse project) that you created for samples. Now you can run 
-   * the WordCount class directly from your IDE passing �input output� as arguments. This will run the sample same as before. Running MapReduce Jobs from IDE in this manner is very useful 
-   * for debugging your MapReduce Jobs. </li>
+   * <li> Opción 1: puede compilar la muestra por Apache Ant desde el directorio de muestras. Para hacer esto, necesita tener Apache Ant instalado en su sistema.
+    * De lo contrario, puede utilizar el jar incluido con el código fuente. Cambie el directorio a HADOOP_HOME y copie WordCount.jar en HADOOP_HOME.
+    * Luego ejecute el comando> bin / hadoop jar hadoop-cookbook.jar .WordCount input output. </li>
+    * <li> Como paso opcional, copie la entrada al directorio de nivel superior del proyecto basado en IDE (proyecto eclipse) que creó para las muestras. Ahora puedes correr
+    * la clase WordCount directamente desde su IDE pasando la entrada a la salida como argumentos. Esto ejecutará la muestra igual que antes. Ejecutar trabajos de MapReduce desde su IDE de esta manera es muy útil
+    * para depurar sus trabajos de MapReduce. </li>
    * </ol> 
    * @param args
    * @throws Exception

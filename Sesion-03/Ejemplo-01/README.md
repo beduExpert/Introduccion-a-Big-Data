@@ -2,7 +2,7 @@
 
 ## Objetivo: Escribir una muestra de WordCount MapReduce, empaquetarla y ejecutarla usando Hadoop independiente
 
-Esta Ejercio explica cómo escribir un programa MapReduce simple y cómo ejecutarlo.
+Esta ejercicio explica cómo escribir un programa MapReduce simple y cómo ejecutarlo.
 
 ![1](assets/Capture.PNG)
 
