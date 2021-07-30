@@ -52,3 +52,25 @@ $ tar xzf apache-cassandra-<Version>.bin.tar.gz –C /opt
 
 Considere el siguiente ejemplo:
 
+```
+$ tar xzf apache-cassandra-2.1.2.bin.tar.gz –C /opt
+```
+
+Opcionalmente, puedes crear un "soft link", que nos ayudará en situaciones donde necesitamos cambiar la ubicación de instalación:
+
+```
+$ ln –s apache-cassandra-2.1.2 cassandra
+```
+
+El diseño de la instalación de Cassandra puede ser diferente según su tipo de instalación. Si está instalando Cassandra usando Debian o un paquete RPM, entonces la instalación creará los directorios requeridos y aplicará los permisos requeridos.
+
+En versiones anteriores de Cassandra, es posible debamos crear directorios de datos y registros de Cassandra antes de ejecutarlo. De forma predeterminada, se instalan en a/var/lib/cassandra y /var/log/Cassandra. La ejecución de Cassandra fallará si el usuario que ejecuta Cassandra no tiene permisos para estos directories. Tú puedes crear y establecer permisos como se te muestra a continuación:
+
+```
+$ sudo mkdir -p /var/log/Cassandra
+$ sudo chown -R `whoami` /var/log/Cassandra
+$ sudo mkdir -p /var/lib/Cassandra
+$ sudo chown -R `whoami` /var/lib/cassandra
+```
+
+¡Enhorabuena! Has instalado satisfactoriamente Cassandra. En caso de presentar algún problema, por favor indicarlo a tu Experto o TA asignado para resolver tu instalación.

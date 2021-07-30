@@ -36,4 +36,4 @@ Tal como se estudio en el PreWork, Se recomienda una memoria mínima de 4 GB par
 
 # Instalación
 
-Apache proporciona código fuente, así como tarballs binarios y paquetes Debian. Sin embargo, los proveedores de terceros, como Datastax, proporcionan el instalador MSI, Linux RPM, paquetes Debian y binarios UNIX y Mac OS X en forma de edición comunitaria, que es una distribución empaquetada gratuita de Apache Cassandra de Datastax. Aquí, cubriremos la instalación usando paquetes tarball binarios y tarball fuente.
+Apache proporciona código fuente, así como tarballs binarios y paquetes Debian. Sin embargo, los proveedores de terceros, como Datastax, proporcionan el instalador MSI, Linux RPM, paquetes Debian y binarios UNIX y Mac OS X en forma de edición comunitaria, que es una distribución empaquetada gratuita de Apache Cassandra de Datastax. Aquí, cubriremos la instalación usando paquetes tarball binarios y tarball fuente. En el Reto 01, ¡Vamos a instalar Cassandra!

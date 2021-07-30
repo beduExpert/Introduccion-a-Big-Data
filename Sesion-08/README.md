@@ -3,10 +3,11 @@
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+![cassandra1](assets/cassandra1.png)
 
 - Comprender los conceptos básicos sobre NoSQL y su aplicación al mundo de la Big Data
-- Aprender a hacer queries básicos en Cassandra
+- Aprender a generar queries básicos en Cassandra
+- Implementar acciones básicas con Cassandra
 
 ## ⚙ Requisitos
 
@@ -16,7 +17,6 @@ Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar est�
 
 ## 📂 Organización de la clase
 
-Agregar los ejemplos y retos que va a requerir la sesión (Borrar está linea una vez se hay leido)
 
 - [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
     - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
