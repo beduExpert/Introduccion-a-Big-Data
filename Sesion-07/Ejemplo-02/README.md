@@ -10,8 +10,6 @@ Las transformaciones amplias implican una mezcla de datos entre las particiones.
 
 Tenemos un RDD-A y realizamos una transformación amplia como groupByKey () y obtenemos un nuevo RDD-B con menos particiones. RDD-B tendrá datos agrupados por cada clave en el conjunto de datos. En la parte (B), tenemos dos RDD: RDD-A y RDD-B y realizamos otro tipo de transformación amplia como join () o intersection () y obtenemos un nuevo RDD-C. Los siguientes son algunos ejemplos de transformaciones amplias.
 
-![wide](assets/wide.png)
-
 # distinct()
 
 distinct() elimina los elementos duplicados y devuelve un nuevo RDD con elementos únicos como se muestra. Creemos un RDD con algunos elementos duplicados (1,2,3,4) y usemos distintos () para obtener un RDD con números únicos:
