@@ -28,7 +28,7 @@ Con Spark SQL, la lógica empresarial se puede escribir fácilmente en SQL y HQL
 
 Spark SQL también es la primera opción para el análisis y el almacenamiento de datos. Spark SQL permite a los analistas de datos escribir consultas ad hoc para su análisis exploratorio. Spark proporciona el shell SQL de Spark, donde puede ejecutar consultas similares a SQL y se ejecutan en Spark. Spark convierte internamente el código en una cadena de cálculos RDD, mientras que Hive convierte el trabajo HQL en una serie de trabajos MapReduce. Con Spark SQL, los desarrolladores también pueden hacer uso del almacenamiento en caché (una función de Spark que permite que los datos se mantengan en la memoria), lo que puede aumentar significativamente el rendimiento de sus consultas.
 
-![sparksql](assets/sparksql.PNG)
+![sparksql](assets/sparksql.png)
 
 ## Spark Streaming
 
@@ -38,7 +38,7 @@ Spark Streaming hace uso de RDD y define algunas API más para procesar el flujo
 
 Spark 2.x introdujo la transmisión estructurada, que utiliza DataFrames en lugar de RDD para procesar la transmisión de datos. El uso de DataFrames como su abstracción de cálculo brinda todos los beneficios de la API de DataFrame para el procesamiento de transmisión. Discutiremos los beneficios de DataFrames sobre RDD en los próximos capítulos.
 
-![sparkstreaming](assets/sparkstreaming.jpg)
+![sparkstreaming](assets/sparkstreaming.png)
 
 ## Spark Machine Learning
 
@@ -46,7 +46,7 @@ Es difícil ejecutar un algoritmo de aprendizaje automático cuando sus datos se
 
 Spark MLlib y ML son los paquetes de Spark para trabajar con algoritmos de aprendizaje automático tales como Clasificación, Clustering y más.
 
-![mlib](assets/mlib.png)
+![mlib](assets/mlib.jpeg)
 
 ## Spark graph processing
 
@@ -56,7 +56,7 @@ Spark proporciona GraphX para procesar dichos datos. GraphX utiliza RDD para su 
 
 GraphFrames es un paquete externo que hace uso de DataFrames en lugar de RDD y define la relación vértice-borde usando un DataFrame.
 
-![sparkgraphx](assets/sparkgraphx.jpg)
+![sparkgraphx](assets/sparkgraphx.png)
 
 ## Cluster manager
 

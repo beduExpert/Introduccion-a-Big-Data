@@ -37,7 +37,7 @@ El siguiente diagrama muestra las relaciones entre Conductor, Trabajadores y Eje
 
 Una vez que se completa el cálculo, la salida se envía al programa del controlador y se guarda en el sistema de archivos:
 
-![2](imgassets/2.PNG)
+![2](assets/2.PNG)
 
 # ¿Y a todo esto... que API's se usan para manejar Spark?
 
@@ -46,7 +46,7 @@ Spark tiene integración con una variedad de lenguajes de programación como Sca
 ## Scala
 Scala es el idioma principal de Spark. Más del 70% del código de Spark está escrito en Scalable Language (Scala). Scala es un lenguaje bastante nuevo. Fue desarrollado por Martin Odersky en 2001 y se lanzó públicamente por primera vez en 2004. Al igual que Java, Scala también genera un código de bytes que se ejecuta en JVM. Scala aporta ventajas tanto de los mundos orientado a objetos como de los orientados a funciones. Proporciona una programación dinámica sin comprometer la seguridad del tipo. Como Spark está escrito principalmente en Scala, puede encontrar casi todas las bibliotecas nuevas en la API de Scala.
 
-![scala](imgassets/scala.jpeg)
+![scala](assets/scala.jpeg)
 
 ## Java
 La mayoría de nosotros estamos familiarizados con Java. Java es un poderoso lenguaje de programación orientado a objetos. La mayoría de los marcos de big data están escritos en Java, lo que proporciona bibliotecas ricas para conectar y procesar datos con estos marcos.
@@ -56,14 +56,14 @@ La mayoría de nosotros estamos familiarizados con Java. Java es un poderoso len
 ## Python
 Python es un lenguaje de programación funcional. Fue desarrollado por Guido van Rossum y se lanzó por primera vez en 1991. Durante algún tiempo, Python no fue popular entre los desarrolladores, pero más tarde, alrededor de 2006-07, introdujo algunas bibliotecas como Numerical Python (NumPy) y Pandas, que se convirtieron en piedras angulares. e hizo que Python fuera popular entre todo tipo de programadores. En Spark, cuando el controlador lanza ejecutores en los nodos trabajadores, también inicia un intérprete de Python para cada ejecutor. En el caso de RDD, los datos se envían primero a las JVM y luego se transfieren a Python, lo que ralentiza el trabajo cuando se trabaja con RDD.
 
-![python](imgassets/python.jpg)
+![python](assets/python.jpg)
 
 ## R
 R es un lenguaje de programación estadístico. Proporciona una biblioteca rica para analizar y manipular los datos, razón por la cual es muy popular entre analistas de datos, estadísticos y científicos de datos. La integración de Spark R es una forma de proporcionar a los científicos de datos la flexibilidad necesaria para trabajar con big data. Al igual que Python, SparkR también crea un proceso R para que cada ejecutor trabaje con los datos transferidos desde la JVM.
 
-![r](imgassets/r.jpg)
+![r](assets/r.jpg)
 
 ## SQL
 El lenguaje de consulta estructurado (SQL) es uno de los lenguajes más populares y potentes para trabajar con tablas almacenadas en la base de datos. SQL también permite a los no programadores trabajar con big data. Spark proporciona Spark SQL, que es un motor de consultas SQL distribuido. Lo veremos a detalle en la última sesión.
 
-![sql](imgassets/sql.jpg)
+![sql](assets/sql.jpg)
