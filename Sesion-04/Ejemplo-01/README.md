@@ -6,9 +6,9 @@ Esta Ejercio explica cómo CALIBRAR tu HDFS...
 
 ## Manos a la obra:
 
-Change the directory to HADOOP_HOME.
+Cambie el directorio a HADOOP_HOME.
 
-Run the following command to create a new directory called /test:
+Ejecute el siguiente comando para crear un nuevo directorio /test:
 
  ```
 >bin/hadoop dfs -mkdir /test

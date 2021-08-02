@@ -81,7 +81,7 @@ sudo apt-get install python3.6
 
 Siga estos pasos para instalar Spark 3.1.2. Descarguelo de la siguiente liga: http://spark.apache.org/downloads.html.
 
-![sparkdow](assets/sparkdow.png)
+![sparkdow](assets/sparkdow.PNG)
 
 Vaya a la ubicación donde ha copiado el paquete de software Spark y descomprímalo:
 ```

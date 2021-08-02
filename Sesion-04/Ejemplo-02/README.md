@@ -1,10 +1,8 @@
-# Ejemplo #2 
-
-## Objetivo: Configuración de Hadoop en un entorno de clúster distribuido
+# Ejemplo #2 Configuración de Hadoop en un entorno de clúster distribuido
 
 La implementación de Hadoop incluye una implementación HDFS, un único rastreador de trabajos y varios TaskTrackers. En la receta anterior, Configuración de HDFS, analizamos la implementación de HDFS. Para la configuración de Hadoop, necesitamos configurar JobTrackers y TaskTrackers y luego especificar TaskTrackers en el archivo HADOOP_HOME / conf / slaves. Cuando iniciamos JobTracker, iniciará los nodos de TaskTracker. El siguiente diagrama ilustra una implementación de Hadoop:
 
-![1](imgassets/1.jpg)
+![1](assets/1.jpg)
 
 ## Manos a la obra!
 
