@@ -163,7 +163,7 @@ El nombre del centro de datos predeterminado es datacenter1. Para verificar el n
 nodetool status
 ```
 
-# Creando uan database y un schema en Cassandra
+# Creando una database y un schema en Cassandra
 
 Un esquema de base de datos de Cassandra tiene los siguientes componentes principales que ya hemos revisado previamente: keyspace, family column y el famoso Primary Key de toda la vida justo hecho para family column. Analicémoslos con cierto detalle.
 
