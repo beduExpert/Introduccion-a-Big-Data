@@ -18,7 +18,7 @@ Una vez que descargue el archivo .pem, vaya a sus instancias en AWS y selecicone
 
 Al abrir tu archivo .pem, aparecerá de esta forma: funciona como una clave sincrónica de seguridad para generar una conexión entre dos máquinas:
 
-![sshkey](assets/sshkey.png)
+![sshkey](assets/sshkey.PNG)
 
 Una vez descargado tu archivo .pem, aplica los siguientes permisos para obtener la información pertinente de tu máuqina virtual para poder generar la conexión de nuestro interés:
 
@@ -37,6 +37,6 @@ ssh -i "shrey.pem" ubuntu@ec2-18-219-82-165.us-east-2.compute.amazonaws.com
 
 Verás la siguiente pantalla:
 
-![finall](assets/finall.png)
+![finall](assets/finall.PNG)
 
 ¡Felicidadez!Una vez que inicie sesión en su instancia de Amazon, su máquina estará listo para instalar lo que necesitaremos a continuación.
