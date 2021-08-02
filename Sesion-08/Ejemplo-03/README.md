@@ -236,5 +236,3 @@ userid | status_update_time       | status_msg
 nitinp | 2015-01-02 10:00:02+0530 | good morning all
 nitinp | 2015-03-02 10:00:02+0530 |      hello world
 ```
-
-## Primary Key
