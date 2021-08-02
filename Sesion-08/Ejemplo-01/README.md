@@ -1,6 +1,6 @@
 # Ejemplo 1 - Introducción a Cassandra
 
-![cassandra](imgassets/cassandra.jpg)
+![cassandra](assets/cassandra.jpg)
 
 En algún momento es casi seguro que ha trabajado o escuchar hablar mucho de bases de datos. Debe haber creado productos utilizando bases de datos relacionales como MySQL y PostgreSQL, y quizás haber experimentado con bases de datos NoSQL, incluido un almacén de documentos como MongoDB o un almacén de valor clave como Redis. Si bien cada una de estas herramientas tiene sus puntos fuertes, ahora considerará si una base de datos distribuida como Cassandra podría ser la mejor opción para la tarea en cuestión.
 
