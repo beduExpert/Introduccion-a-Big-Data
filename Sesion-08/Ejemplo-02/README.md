@@ -11,11 +11,11 @@ La instalación tarball es diferente al de los paquetes RPM o Debian. Veamos en 
 
 ## La siguiente tabla muestra la lista de directorios y su descripción:
 
-![tabla](assets/tabla.png)
+![tabla](assets/tabla.PNG)
 
 La siguiente tabla describe el diseño de instalación si usa paquetes RPM o Debian (directorios en la instalación basada en paquetes):
 
-![tabla2](assets/tabla2.png)
+![tabla2](assets/tabla2.PNG)
 
 ## Archivos de configuración
 
