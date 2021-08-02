@@ -18,12 +18,12 @@
 ## 📂 Organización de la clase
 
 
-- [Ejemplo 01:  Nombre del ejemplo](./Ejemplo-01/README.md)
-    - [Reto 01: Nombre del reto 01](./Reto-01/README.md)
-- [Ejemplo 02:  Nombre del ejemplo](./Ejemplo-02/README.md)
-    - [Reto  02: Nombre del reto 02](./Reto-02/README.md)
-- [Ejemplo 03: Nombre del ejemplo 02](./Ejemplo-03/README.md)
-    - [Reto 03: Nombre del reto 03](./Reto-03/README.md)
+- [Ejemplo 01:  Introducción a Cassandra](./Ejemplo-01/README.md)
+    - [Reto 01: Instalación de Cassandra](./Reto-01/README.md)
+- [Ejemplo 02:  Comprendiendo el layout de instalación de Cassandra](./Ejemplo-02/README.md)
+    - [Reto  02: Corriendo un servidor de cassandra](./Reto-02/README.md)
+- [Ejemplo 03: Arquitectura de Cassandra, Data distribution y keyspace](./Ejemplo-03/README.md)
+    - [Reto 03: Crea tu propia database en Cassandra](./Reto-03/README.md)
 
 
 
