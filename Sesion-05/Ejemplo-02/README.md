@@ -78,7 +78,7 @@ Spark también se integra bien con Apache Mesos, que se basa en los mismos princ
 
 Kubernetes es un marco de trabajo de orquestación de propósito general para ejecutar aplicaciones en contenedores. Kubernetes proporciona varias funciones, como la tenencia múltiple (ejecutar diferentes versiones de Spark en un clúster físico) y el uso compartido del espacio de nombres. En el momento de escribir este libro, el programador de Kubernetes todavía se encuentra en la etapa experimental. Para obtener más detalles sobre la ejecución de una aplicación Spark en Kubernetes, consulte la documentación de Spark.
 
-![kubernetes](assets/kubernetes.jpg)
+![kubernetes](assets/kubernates.jpg)
 
 ## Hadoop y Spark
 
