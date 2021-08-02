@@ -27,4 +27,4 @@ Amazon Web Service (AWS) es una popular plataforma en la nube que ofrece diversa
 
 - Crea una cuenta gratis de Amazon AWS en la siguiente liga https://aws.amazon.com/free . Lo que debes hacer es darte de alta con tu nombre completo, correo electrónico y demás datos solicitados por la plataforma. En caso de contar con algún problema al respecto, por favor consulta a tu Experto asignado o TA.
 
-![capamazon](assets/capamazon.png)
+![capamazon](assets/capamazon.PNG)
