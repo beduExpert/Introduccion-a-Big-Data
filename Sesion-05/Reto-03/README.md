@@ -12,9 +12,9 @@ Antes de desarrollar la solución, Amazon nos ofrece documentación de calidad y
 
 Una vez que descargue el archivo .pem, vaya a sus instancias en AWS y selecicone la pestaña de detalles para obtener información sobre su máquina virtual:
 
-![detalles](assets/detalles.png)
+![detalles](assets/detalles.PNG)
 
-![detalles2](assets/detalles2.png)
+![detalles2](assets/detalles2.PNG)
 
 Al abrir tu archivo .pem, aparecerá de esta forma: funciona como una clave sincrónica de seguridad para generar una conexión entre dos máquinas:
 
